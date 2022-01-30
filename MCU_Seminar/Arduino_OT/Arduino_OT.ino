@@ -8,21 +8,6 @@ void loop() {
     // - pin_number
     // - pin_mode : INPUT(입력) or OUTPUT(출력)
 
-  // 통신
-    // 직렬 통신 : 1비트씩 전송
-      // 단위 : bps (통신 속도 1초당 전송되는 비트 수)
-      
-      // 시작비트 : 시작 표시 비트
-      // 패리티 비트 : 데이터 오류 판별 비트
-      // 정지비트 : 종료 표시 비트
-
-      // 무선 : 블루투스, RF통신, NFC
-      // 유선 : UART, I2C, SPI
-      
-      // 단방향 : RF통신
-      // 양방향 : 블루투스, NFC, UART, I2C, SPI
-
-    // 병렬 통신
   // 시리얼 모니터 : 문자, 숫자 출력
     // 시리얼 시작 : Serial.begin(BaudRate)
     // 시리얼 통신 가능? : Serial.available()
@@ -50,8 +35,24 @@ void loop() {
         // 뉴클레오는 DAC가 있으므로 Analog신호 출력 가능
     // 아날로그 입력 : analogRead(pin_number)
       // - 입력 : 분해능 10bit = 0~1023
-      // - ADC : Analog to Digital Converter. Analog신호를 Digital신호로 바꿔주는 기기
+      // - ADC : Analog to Digital Converter. Analog신호를 Digital신호로 바꿔주는 기기 
 
+  // 통신
+    // 직렬 통신 : 1비트씩 전송
+      // 단위 : bps (통신 속도 1초당 전송되는 비트 수)
+      
+      // 시작비트 : 시작 표시 비트
+      // 패리티 비트 : 데이터 오류 판별 비트
+      // 정지비트 : 종료 표시 비트
+
+      // 무선 : 블루투스, RF통신, NFC
+      // 유선 : UART, I2C, SPI
+      
+      // 단방향 : RF통신
+      // 양방향 : 블루투스, NFC, UART, I2C, SPI
+
+    // 병렬 통신
+    
   // 회로
     // PULL_DOWN 회로 : PULL_UP 회로와 반대
     // PULL_UP 회로 : PULL_UP 회로와 반대

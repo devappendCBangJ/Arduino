@@ -1,0 +1,11 @@
+-아두이노 문법 정리
+https://www.arduino.cc/reference/ko/
+
+
+(define_int_float_const int 관련 자료)
+https://steemit.com/kr-arduino/@codingman/56npr6
+
+
+
+(OLED 제품 사양)
+U8G2_SSD1306_128X64_NONAME_1_HW_I2C u8g2(U8G2_R0, /* reset=*/ U8X8_PIN_NONE);

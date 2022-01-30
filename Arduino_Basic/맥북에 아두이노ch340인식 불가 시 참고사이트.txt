@@ -1,0 +1,5 @@
+맥북에 아두이노 연결 시 포트 인식 불가 참고 사이트
+
+-https://blog.naver.com/yulian/221018644987
+
+-https://blog.naver.com/bringblingme/221684793962

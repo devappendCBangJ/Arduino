@@ -1,0 +1,40 @@
+온습도 센서 에러 시 무언가 라이브러리 경로가 잘못 설치 되어 있는것 같습니다.
+
+만약 온습도 센서 업로드 에러가 뜬다면,  
+
+코딩창에  #include <Adafruit_Sensor.h> 를 추가해서 한번 해보시겠어요.
+------------------------------------------------------------------------------
+
+#include <Adafruit_Sensor.h>
+#include <DHT.h>
+#define DHTPIN 4
+#define DHTTYPE DHT11
+DHT dht(DHTPIN, DHTTYPE);
+ 
+void setup(){
+  Serial.begin(9600);
+  dht.begin();
+}
+ 
+void loop(){
+    float t = dht.readTemperature();   
+    int h = dht.readHumidity();
+    
+    Serial.print("temperature:");      
+    Serial.println(t,1);   
+    Serial.print("humidity:");         
+    Serial.println(h);    
+    delay(1000);
+}
+
+
+---------------------------------------------------------------------------------------------
+위 의 코딩창에도 안된다면,  아래 네이버 지식인에 올라온 글입니다.
+
+https://kin.naver.com/qna/detail.nhn?d1id=11&dirId=1118&docId=329947256&qb=QWRhZnJ1aXRfU0VOU09S&enc=utf8&section=kin.ext&rank=2&search_sort=0&spq=0
+
+라이브러리관리에서 Adafruit Unified Sensor by Adafruit 검색 후 인스톨 한다음
+
+코딩창에  #include <Adafruit_Sensor.h> 를 추가해서 한번 해보시겠어요.(위 코딩)
+
+https://m.blog.naver.com/PostView.nhn?blogId=chandong83&logNo=220875853839&proxyReferer=https:%2F%2Fwww.google.co.kr%2F

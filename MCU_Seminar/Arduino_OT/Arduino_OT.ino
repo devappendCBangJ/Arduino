@@ -4,10 +4,6 @@ void setup() {
 }
 
 void loop() {
-  // 핀 설정 : pinMode(pin_number, pin_mode)
-    // - pin_number
-    // - pin_mode : INPUT(입력) or OUTPUT(출력)
-
   // 시리얼 모니터 : 문자, 숫자 출력
     // 시리얼 시작 : Serial.begin(BaudRate)
     // 시리얼 통신 가능? : Serial.available()
@@ -18,12 +14,19 @@ void loop() {
     // 시리얼 char입력 : Serial.read()
     // 시리얼 string입력 : Serial.readString()
   // 시리얼 플로터 : 변수 값 그래프 출력
+  
+  // 핀 설정 : pinMode(pin_number, pin_mode)
+    // - pin_number
+    // - pin_mode : INPUT(입력) or OUTPUT(출력)
+
+
 
   // 디지털
     // 디지털 출력 : digitalWrite(pin_number, bool)
       // - 출력 bool : HIGH(1) or LOW(0)
     // 디지털 입력 : digitalRead(pin_number)
       // - 입력 : HIGH(1) or LOW(0)
+      
   // 아날로그
     // 아날로그 출력 : analogWrite(pin_number, 출력)
       // - 출력 : 8bit = 0~255
@@ -36,6 +39,8 @@ void loop() {
     // 아날로그 입력 : analogRead(pin_number)
       // - 입력 : 분해능 10bit = 0~1023
       // - ADC : Analog to Digital Converter. Analog신호를 Digital신호로 바꿔주는 기기 
+
+  // ms 딜레이 : delayMicroseconds(time);
 
   // 통신
     // 직렬 통신 : 1비트씩 전송

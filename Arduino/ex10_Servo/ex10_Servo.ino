@@ -19,12 +19,12 @@
     // 180 : 역방향 회전 최고속도
   // 5) 서보 객체 해제 : servo_name.detach();
 
-#include<Servo.h> // ●Servo 라이브러리를 추가
-Servo servo;      // ●Servo 클래스로 servo객체 생성
-int value = 0;    // ●각도를 조절할 변수 value
+#include<Servo.h> // ●Servo 라이브러리 추가
+Servo servo; // ●Servo 객체 생성
+int value = 0;    // 각도를 조절할 변수 value
 
 void setup() {
-  servo.attach(7);     // ●맴버함수인 attach : 핀 설정
+  servo.attach(7, 600, 2400); // ●Servo 핀 설정
   Serial.begin(9600); // 시리얼 모니터 사용 고고
 }
 
@@ -45,6 +45,6 @@ void loop() {
     else if(in_data != 1 && in_data != '\n')   // 그외의 데이터가 입력되면
       value = 0;              // 각도를 0으로 초기화
       
-    servo.write(value); // ●value값의 각도로 회전. ex) value가 90이라면 90도 회전
+    servo.write(value); // ●서보 움직임 by degree
   }
 }

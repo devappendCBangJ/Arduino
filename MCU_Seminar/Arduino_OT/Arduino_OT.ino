@@ -16,7 +16,7 @@ void loop() {
   // 시리얼 플로터 : 변수 값 그래프 출력
   
   // 핀 설정 : pinMode(pin_number, pin_mode)
-    // - pin_number
+    // - pin_number : ex. A0
     // - pin_mode : INPUT(입력) or OUTPUT(출력)
 
 

@@ -1,4 +1,5 @@
 // PSD 예제 : https://blog.daum.net/rockjjy99/2627
+// 시리얼 플로터 활용
 
 #include <GP2Y0A02YK0F.h>
 

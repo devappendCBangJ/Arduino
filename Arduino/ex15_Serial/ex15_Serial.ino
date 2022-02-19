@@ -1,3 +1,5 @@
+// Serial 통신 공부 : https://blog.naver.com/yuyyulee/220301424499
+
 // ● Serial Communication
   // 1. 시리얼 모니터 : 문자, 숫자 출력 but 데이터를 무조건 문자로 인식
     // 0) 통신 팁
@@ -25,24 +27,25 @@
           // 3] 정지 비트
             // 1 : 1개의 정지 비트 사용o
             // 2 : 2개의 정지 비트 사용o
-    // 2) 시리얼 통신 가능? : value = Serial.available()
+            
+    // 2) 시리얼 통신 수신된 데이터 확인 : Value = Serial.available()
       // - 반환값 : 수신된 데이터 중 아직 읽지 않은 데이터 개수 / int형으로 반환
     
-    // 3) 시리얼 출력 + Enter : Serial.println(Value)
-    // 3) 시리얼 출력 : Serial.print(Value)
-    // 3) 시리얼 출력 : Serial.write(Value)
+    // 3) 시리얼 보내기 + Enter : Serial.println(Value)
+    // 3) 시리얼 보내기 : Serial.print(Value)
+    // 3) 시리얼 보내기 : Serial.write(Value)
       // - Value : byte형 데이터 or 문자열
       // - 문자가 아닌 Raw 데이터 값을 지정해서 보내야하는 경우 사용 ex. 블루투스, 지그비 모듈과의 통신
-    // 3) 시리얼 출력 : Serial.write(Buffer, Length)
+    // 3) 시리얼 보내기 : Serial.write(Buffer, Length)
       // - Buffer : byte형 배열
       // - Length : 전송할 배열의 길이, 전송할 데이터의 개수
       // - 문자가 아닌 Raw 데이터 값을 지정해서 보내야하는 경우 사용 ex. 블루투스, 지그비 모듈과의 통신
     
-    // 4) 시리얼 char입력 : Serial.read()
+    // 4) 시리얼 char읽기 : Serial.read()
       // - 반환값 : 수신된 데이터를 순서대로 하나씩 저장 + 읽기 / char형으로 반환
-    // 4) 시리얼 string입력 : Serial.readString()
+    // 4) 시리얼 string읽기 : Serial.readString()
     
-    // 4) 시리얼 char입력 + 지정한 개수만큼 읽어서 버퍼에 저장 + 개수 반환 : Serial.readBytes(Buffer, Length)
+    // 4) 시리얼 char읽기 + 지정한 개수만큼 읽어서 버퍼에 저장 + 개수 반환 : Serial.readBytes(Buffer, Length)
       // - Buffer : char형 배열
       // - Length : 읽어올 데이터 개수
       // - 반환값 : byte형 데이터(읽어온 데이터 개수)

@@ -1,5 +1,7 @@
-// 1_Serial Multi
+// Serial 통신 공부 : https://blog.naver.com/yuyyulee/220301424499
 
+//// 1_Serial Multi
+//
 //void setup() {
 //  Serial.begin(9600);
 //  Serial1.begin(9600);

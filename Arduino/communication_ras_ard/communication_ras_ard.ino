@@ -18,11 +18,11 @@ void loop(){
       servo_angle = Serial1.parseInt(); // Serial1 통신값 숫자 변환
     }
 
-  myServo.write(servo_angle);           // Serial1 통신값에 의해 서보 회전
-
-  Serial.print("set to ");              // Serial포트로 메시지 작성(컴퓨터에서 확인용)
-  Serial.println(servo_angle);          // Serial포트로 각도값 작성(컴퓨터에서 확인용)
-  delay(5);
+    myServo.write(servo_angle);           // Serial1 통신값에 의해 서보 회전
+  
+    Serial.print("set to ");              // Serial포트로 메시지 작성(컴퓨터에서 확인용)
+    Serial.println(servo_angle);          // Serial포트로 각도값 작성(컴퓨터에서 확인용)
+    delay(5);
   }
 
   delay(100);
